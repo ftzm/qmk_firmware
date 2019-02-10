@@ -17,8 +17,8 @@ enum chimera_ergo_42_layers
 	_NAV
 };
 
-#define KC_NMPD TG(_NUMPAD)
-#define KC_SYMB TG(_SYMBOLS)
+#define KC_NMPD MO(_NUMPAD)
+#define KC_SYMB MO(_SYMBOLS)
 #define KC_SPFN LT(_NAV,KC_4)
 #define KC_SCTL MT(MOD_LCTL, KC_2)
 #define KC_SCTR MT(MOD_LCTL, KC_9)
@@ -51,9 +51,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----|     |----+----+----+----+----+----|
      ESC , A  , O  , E  , U  , I  ,       D  , H  , T  , N  , S  ,ENT ,
   //|----+----+----+----+----+----|     |----+----+----+----+----+----|
-     LGUI,SCLN, Q  , J  , V  , X  ,       B  , M  , W  , V  , Z  ,RSPC,
+     LGUI,SCLN, Q  , J  , K  , X  ,       B  , M  , W  , V  , Z  ,SLSH,
   //|----+----+----+----+----+----|     |----+----+----+----+----+----|
-                    LSFT,SYMB,BSPC,      SPC ,NMPD,RSFT
+                    LALT,SYMB,LSFT,      SPC ,NMPD,RCTL
   // \------------------+----+----/      \---+----+----+--------------/
   ),
 
@@ -89,7 +89,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----|     |----+----+----+----+----+----|
       F7 , F8 , F9 ,F10 ,F11 ,F12 ,      GRV ,PLUS,MINS,LBRC,RBRC,    ,
   //|----+----+----+----+----+----|     |----+----+----+----+----+----|
-                        ,PIPE,    ,          ,    ,
+                        ,    ,    ,          ,    ,
   // \------------------+----+----/      \---+----+----+--------------/
   ),
 
