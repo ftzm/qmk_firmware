@@ -1,5 +1,6 @@
 # dfu-programmer doesn't have darwin on it's list of supported platforms
-{ pkgs ? import <nixpkgs> { config = { allowUnsupportedSystem = true; }; }
+{ sources ? import ./nix/sources.nix
+, pkgs ? import sources.nixpkgs {}
 , avr ? true, arm ? true, teensy ? true }:
 
 with pkgs;
